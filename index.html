@@ -1,0 +1,74 @@
+<!doctype html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--    <link href="bootstrap-3.3.6-dist/css/bootstrap.css" rel="stylesheet" type="text/css">-->
+    <link href='https://fonts.googleapis.com/css?family=Dosis:400,600,300' rel='stylesheet' type='text/css'>
+    <link href="css/main.css" rel="stylesheet">
+    <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+</head>
+
+<body>
+
+    <div class="overlay overlay-door" id="overlay">
+        <div class="close-overlay" id="close"></div>
+        <div class="overlay-box" id="overlay-box">
+            <div class="msg-box"><span class="msg-box-text" id="msg-text"></span></div>
+            <div class="disp-time-box">
+                <span class="disp-time">Time left:</span>
+                <br>
+                <span class="disp-time" id="hh"></span>
+                <span class="disp-time">:</span>
+                <span class="disp-time" id="mm"></span>
+                <span class="disp-time">:</span>
+                <span class="disp-time" id="ss"></span>
+            </div>
+        </div>
+    </div>
+    <header>
+        <h1>Little Pomodoro Timer</h1>
+        <h3>Time yourself!</h3></header>
+    <div class="maincont">
+        <!--
+        <div class="subcont">
+            <div class="btn"><span class="btn-text" id="plus-break">+</span></div>
+            <div class="disp-sm-cont">
+                <div class="disp-sm"><span class="disp-sm-text" id="breaktime">10</span></div>
+            </div>
+            <div class="btn"><span class="btn-text" id="minus-break">-</span></div>
+        </div>
+        <div class="subcont">
+            <div class="disp-lg" id="start">
+                <span class="start-btn">START</span></div>
+        </div>
+        <div class="subcont">
+            <div class="btn"><span class="btn-text" id="plus-session">+</span></div>
+            <div class="disp-sm"><span class="disp-sm-text" id="sessiontime">10</span></div>
+            <div class="btn"><span class="btn-text" id="minus-session">-</span></div>
+        </div>
+-->
+        <div class="subcont leftcont">
+            <div class="textrow"><span class="texttime">Break Time:</span></div>
+            <div class="btnrow" id="plus-break"><span class="btn-text">+</span></div>
+            <div class="disp-sm"><span class="disp-sm-text" id="breaktime">25</span></div>
+            <div class="btnrow" id="minus-break"><span class="btn-text">-</span></div>
+        </div>
+        <div class="subcont play" id="start">
+            <div class="playbtn"></div>
+        </div>
+        <div class="subcont rightcont">
+            <div class="textrow"><span class="texttime">Session Time:</span></div>
+            <div class="btnrow" id="plus-session"><span class="btn-text">+</span></div>
+            <div class="disp-sm"><span class="disp-sm-text" id="sessiontime">10</span></div>
+            <div class="btnrow" id="minus-session"><span class="btn-text">-</span></div>
+        </div>
+
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

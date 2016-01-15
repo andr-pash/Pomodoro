@@ -1,0 +1,192 @@
+html {
+    background-color: color: #e2e2d8;
+    background-size: cover;
+    min-height: 100%;
+    font-family: 'Dosis' !important;
+}
+body {
+    min-height: 100%;
+    min-width: 100%;
+    margin: 0;
+    background-color: #6b6b6b;
+}
+header {
+    margin-bottom: 5%;
+    padding: 5% 10% 5% 10%;
+    background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.65) 1%, rgba(0, 0, 0, 0.65) 43%, rgba(0, 0, 0, 0.02) 98%, rgba(0, 0, 0, 0) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.65) 1%, rgba(0, 0, 0, 0.65) 43%, rgba(0, 0, 0, 0.02) 98%, rgba(0, 0, 0, 0) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.65) 1%, rgba(0, 0, 0, 0.65) 43%, rgba(0, 0, 0, 0.02) 98%, rgba(0, 0, 0, 0) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000', GradientType=0);
+    /* IE6-9 */
+}
+h1,
+h2,
+h3 {
+    text-align: center;
+    margin: 0;
+    color: #e2e2d8;
+}
+h1 {
+    font-size: 300%;
+}
+.maincont {
+    min-height: 30em;
+    height: 100%;
+    margin: 0 20% 0 20%;
+    background-color: rgba(0, 0, 0, 0.33);
+    border-radius: 15px;
+    box-shadow: inset 0 0 20px #000;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.maincont div {
+    box-sizing: border-box;
+}
+.subcont {
+    width: 33.33%;
+    min-height: 30em;
+    height: 100%;
+    float: left;
+    margin: 0;
+    text-align: center;
+    box-sizing: border-box;
+}
+.subcont.leftcont {
+    border-right-style: solid;
+    border-right-width: 2px;
+}
+.subcont.rightcont {
+    border-left-style: solid;
+    border-left-width: 2px;
+}
+.subcont.play {
+    background-color: rgba(0, 200, 0, 0.1);
+    cursor: pointer;
+}
+.play:hover {
+    box-shadow: inset 0 0 10px #000;
+    background-color: rgba(0, 200, 0, 0.2);
+}
+.playbtn {
+    margin: 0 auto 0 auto;
+    height: 30em;
+    background: url(img/playvideo.png) center center no-repeat;
+    background-size: 100%;
+    opacity: 0.4;
+}
+.btnrow {
+    min-height: 7.5em;
+    line-height: 6em;
+}
+.btnrow:hover {
+    box-shadow: inset 0 0 10px #000;
+    background-color: rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+.btn {
+    min-height: 5em;
+    width: 100%;
+    padding-top: 3em;
+}
+.disp-sm-cont {
+    min-height: 10em;
+}
+.disp-sm {
+    height: 10em;
+    margin: 0 auto 0 auto;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    border-top-style: solid;
+    border-top-width: 2px;
+}
+.disp-lg {
+    height: 20em;
+    width: 20em;
+    border: solid black 5px;
+    border-radius: 50%;
+    margin: 0 auto 0 auto;
+}
+.start-btn {
+    font-size: 300%;
+    line-height: 7em;
+}
+.disp-sm-text {
+    font-size: 200%;
+    line-height: 5em;
+}
+.btn-text {
+    font-size: 300%;
+    cursor: pointer;
+}
+.overlay {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    z-index: 1;
+}
+.overlay-door {
+    visibility: hidden;
+    opacity: 0;
+    width: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    -webkit-transition: opacity 1.0s;
+    transition: opacity 1.0s;
+}
+.overlay-door.open {
+    visibility: visible;
+    width: 100%;
+    opacity: 1;
+    transition: opacity 1.0s;
+}
+.overlay-box {
+    width: 50%;
+    height: 50%;
+    margin: 20% auto 0 auto;
+    border: solid black 2px;
+    border-radius: 10px;
+}
+.close-overlay {
+    float: right;
+    background: url(img/cross.png) center center no-repeat;
+    width: 5%;
+    height: 10%;
+    /*    background-color: rgba(0, 0, 0, 0.5);*/
+    border: solid black 0px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 9px;
+    cursor: pointer;
+}
+.disp-time-box {
+    height: 40%;
+    width: 90%;
+    margin: 15% auto 0 auto;
+    text-align: center;
+}
+.msg-box {
+    height: 15%;
+    width: 90%;
+    margin: 10% auto 0 auto;
+    text-align: center;
+}
+.disp-time {
+    font-size: 250%;
+}
+.textrow {
+    min-height: 5em;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+}
+.texttime {
+    margin: 0 auto 0 auto;
+    font-size: 150%;
+    line-height: 3em;
+}
+.msg-box-text {
+    font-size: 400%;
+}
